@@ -1,1 +1,10 @@
-<p>table-line works!</p>
+<th scope="row">{{ id }}</th>
+<td>{{name}}</td>
+<td>{{status}}</td>
+<td>
+    <button 
+        class="btn-primary"
+        (click)="onClickChangeStatusProducts()">
+        Changer l'état
+    </button>
+</td>
