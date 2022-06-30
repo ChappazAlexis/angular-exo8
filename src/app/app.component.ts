@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { ProductService } from './service/product/product.service';
 
 @Component({
   selector: 'app-root',
@@ -9,11 +8,6 @@ import { ProductService } from './service/product/product.service';
 
 
 export class AppComponent {
-  constructor(private productService: ProductService) {
+  constructor() {
   }
-
-  onClickChangeStatusAllProduct(newStatus: any) {
-    this.productService.changeAllStatusProducts(newStatus);
-  }
-
 }

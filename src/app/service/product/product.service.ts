@@ -25,7 +25,13 @@ export class ProductService {
     }
    }
 
-                                                // Remove any ??
+   getProductInfos(productId: any) {
+    for(let product of this.products) {
+      if(product.id === productId) {
+        return product;
+      }
+    }
+   }
 
    changeAllStatusProducts(newStatus: any) {
     this.products.forEach(product => {
